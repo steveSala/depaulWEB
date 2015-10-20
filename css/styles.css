@@ -1,0 +1,36 @@
+html { 
+  	background: url(../images/background.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+
+a:hover{
+  	border-bottom: 3px solid transparent;
+  	border-color: red;
+}
+
+#home{
+	color:red;
+}
+.title{
+	font-size:3em;
+	position: absolute;
+  	top: 50%;
+  	left: 15%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	text-align: left;
+}
+.subtitle{
+	font-size:1.3em;
+	position: absolute;
+  	top: 57%;
+  	left: 15%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	text-align: left;
+}
