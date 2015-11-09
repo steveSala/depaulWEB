@@ -1,0 +1,105 @@
+/*html { 
+  	background: url(../images/background.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}*/
+body{
+	padding:0px;
+}
+#marquee{
+	 background: url(../images/background.jpg) no-repeat center center fixed; 
+  	height:100vh;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+a:hover{
+  	border-bottom: 1px solid transparent;
+  	border-color: red;
+}
+
+#home{
+	color:red;
+}
+.title{
+	font-size:3em;
+	position: absolute;
+  	top: 50%;
+  	left: 15%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	text-align: left;
+  	border-bottom:solid 2px red;
+}
+.subtitle{
+	font-size:1.3em;
+	position: absolute;
+  	top: 57%;
+  	left: 15%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	text-align: left;
+}
+
+#scroll-down{
+	font-size:.9em;
+	position: absolute;
+  	top: 96%;
+  	left: 48%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	text-align: center;
+  	border:solid 1px white;
+}
+
+#right_menu{
+	position:absolute;
+	top:45%;
+	right:5%;
+	color:red;
+	text-align:right;
+}
+
+li{
+	list-style:none;
+}
+li:hover{
+}
+img{
+	margin:10px 5px 5px 5px;
+}
+.bigger{
+	font-size:1.4em;
+	font-weight: bold;
+}
+
+#navbar{
+	height:50px;
+	background-color: black;
+    width:100%;
+}
+#navbar li{
+	float:left;
+	color:white;
+	margin-left:40px;
+	margin-right:40px;
+}
+#navbar li a{
+	float:left;
+	color:white;
+}
+#navbar li a:hover{
+	text-decoration: none;
+}
+#navbar ul{
+	margin:auto;
+	display: flex;
+    direction:row;
+    justify-content:space-around;
+}
+
+
