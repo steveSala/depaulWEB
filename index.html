@@ -59,14 +59,14 @@
 
   		<div id="right_menu">
   			<ul>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Business</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Culture &amp; Recreation</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Environment</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Housing &amp; Development</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Social Services</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Civic Services</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Education</li>
-	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Health</li>
+	  			<li class="menu">Business<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Culture &amp; Recreation<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Environment<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Housing &amp; Development<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Social Services<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Civic Services<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Education<span id="red" class="hidden-item"> - </span></li>
+	  			<li class="menu">Health<span id="red" class="hidden-item"> - </span></li>
   			</ul>
 		</div>
 		<div class="container">
@@ -144,35 +144,35 @@
   		current=$(this);
 
 
-  		if($(this).text()==' - Business'){ 
+  		if($(this).text()=='Business - '){ 
   			$('#marquee').css('background-image', 'url(images/Business.jpg)');
         $('.title').html('Business');
         $('.subtitle').html('A Great City For Your Business');
-  		}else if($(this).text()==' - Culture & Recreation'){
+  		}else if($(this).text()=='Culture & Recreation - '){
   			$('#marquee').css('background-image', 'url(images/Culture.jpg)');
         $('.title').html('Culture');
         $('.subtitle').html('Has Culture');
-  		}else if($(this).text()==' - Environment'){
+  		}else if($(this).text()=='Environment - '){
   			$('#marquee').css('background-image', 'url(images/Environment.jpg)');
         $('.title').html('Environment');
         $('.subtitle').html('Cares About The Environment');
-  		}else if($(this).text()==' - Housing & Development'){
+  		}else if($(this).text()=='Housing & Development - '){
   			$('#marquee').css('background-image', 'url(images/Housing.jpg)');
         $('.title').html('Housing &amp; Development');
         $('.subtitle').html('Is A Great City To Live In');
-  		}else if($(this).text()==' - Social Services'){
+  		}else if($(this).text()=='Social Services - '){
   			$('#marquee').css('background-image', 'url(images/Social.jpg)');
         $('.title').html('Social Services');
         $('.subtitle').html('World Class Social Services');
-  		}else if($(this).text()==' - Civic Services'){
+  		}else if($(this).text()=='Civic Services - '){
   			$('#marquee').css('background-image', 'url(images/Civic.jpg)');
         $('.title').html('Civic Services');
         $('.subtitle').html('World Class Civic Services');
-  		}else if($(this).text()==' - Education'){
+  		}else if($(this).text()=='Education - '){
   			$('#marquee').css('background-image', 'url(images/Education.jpg)');
         $('.title').html('Education');
         $('.subtitle').html('No Money For It');
-  		}else if($(this).text()==' - Health'){
+  		}else if($(this).text()=='Health - '){
   			$('#marquee').css('background-image', 'url(images/Health.jpg)');
         $('.title').html('Health');
         $('.subtitle').html('Best Health Care');
