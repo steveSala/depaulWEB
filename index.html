@@ -28,19 +28,19 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container" id="nav-container">
         <div class="navbar-header">
-          <div class="visible-xs" style="color:red;text-align:center;">CHICAGO</div>
+          <!--<div class="visible-xs" style="color:red;text-align:center;">CHICAGO</div> -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-
-            <div style="color:white;">MENU</div>
-
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 			<li class="navbar-menu-list"><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
 			<li class="navbar-menu-list"><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
-			<li class="navbar-menu-list"><a href="#"><span id="home">Chicago</span></a></li>
+			<li class="navbar-menu-list"><a id="red" href="#">Chicago</a></li>
 			<li class="navbar-menu-list"><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
 			<li class="navbar-menu-list"><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
           </ul>
@@ -59,14 +59,14 @@
 
   		<div id="right_menu">
   			<ul>
-	  			<li class="menu">Business</li>
-	  			<li class="menu">Culture &amp; Recreation</li>
-	  			<li class="menu">Environment</li>
-	  			<li class="menu">Housing &amp; Development</li>
-	  			<li class="menu">Social Services</li>
-	  			<li class="menu">Civic Services</li>
-	  			<li class="menu">Education</li>
-	  			<li class="menu">Health</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Business</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Culture &amp; Recreation</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Environment</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Housing &amp; Development</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Social Services</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Civic Services</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Education</li>
+	  			<li class="menu"><span id="red" class="hidden-item"> - </span>Health</li>
   			</ul>
 		</div>
 		<div class="container">
@@ -131,31 +131,51 @@
   	<script>
   	var current ="";
   	$('.menu').click(function(){
-  		console.log($(this).html());
+  		console.log($(this).text());
   		if(current != ""){
   			current.removeClass('bigger');
+        console.log(current);
+        current.find('span').addClass('hidden-item');
+        current.find('span').removeClass('visible-item');
   		}
 
   		$(this).addClass('bigger');
+      $(this).find('span').addClass('visible-item');
   		current=$(this);
 
-  		if($(this).html()=='Business'){ 
+
+  		if($(this).text()==' - Business'){ 
   			$('#marquee').css('background-image', 'url(images/Business.jpg)');
-  		}else if($(this).html()=='Culture &amp; Recreation'){
-  			$(this).addClass('bigger');
+        $('.title').html('Business');
+        $('.subtitle').html('A Great City For Your Business');
+  		}else if($(this).text()==' - Culture & Recreation'){
   			$('#marquee').css('background-image', 'url(images/Culture.jpg)');
-  		}else if($(this).html()=='Environment'){
+        $('.title').html('Culture');
+        $('.subtitle').html('Has Culture');
+  		}else if($(this).text()==' - Environment'){
   			$('#marquee').css('background-image', 'url(images/Environment.jpg)');
-  		}else if($(this).html()=='Housing &amp; Development'){
+        $('.title').html('Environment');
+        $('.subtitle').html('Cares About The Environment');
+  		}else if($(this).text()==' - Housing & Development'){
   			$('#marquee').css('background-image', 'url(images/Housing.jpg)');
-  		}else if($(this).html()=='Social Services'){
+        $('.title').html('Housing &amp; Development');
+        $('.subtitle').html('Is A Great City To Live In');
+  		}else if($(this).text()==' - Social Services'){
   			$('#marquee').css('background-image', 'url(images/Social.jpg)');
-  		}else if($(this).html()=='Civic Services'){
+        $('.title').html('Social Services');
+        $('.subtitle').html('World Class Social Services');
+  		}else if($(this).text()==' - Civic Services'){
   			$('#marquee').css('background-image', 'url(images/Civic.jpg)');
-  		}else if($(this).html()=='Education'){
+        $('.title').html('Civic Services');
+        $('.subtitle').html('World Class Civic Services');
+  		}else if($(this).text()==' - Education'){
   			$('#marquee').css('background-image', 'url(images/Education.jpg)');
-  		}else if($(this).html()=='Health'){
+        $('.title').html('Education');
+        $('.subtitle').html('No Money For It');
+  		}else if($(this).text()==' - Health'){
   			$('#marquee').css('background-image', 'url(images/Health.jpg)');
+        $('.title').html('Health');
+        $('.subtitle').html('Best Health Care');
   		}
   		
 	});

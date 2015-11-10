@@ -22,9 +22,16 @@ a:hover{
   	border-bottom: 1px solid transparent;
   	border-color: red;
 }
+.hidden-item{
+  display:none;
+}
 
-#home{
-	color:red;
+.visible-item{
+  display:inline;
+}
+
+#red{
+  color:red;
 }
 .title{
 	font-size:3em;
@@ -61,9 +68,10 @@ a:hover{
 	position:absolute;
 	top:45%;
 	right:5%;
-	color:red;
+	color:white;
 	text-align:right;
 }
+
 
 li{
 	list-style:none;
@@ -71,10 +79,9 @@ li{
 li:hover{
 }
 img{
-	margin:40px 5px 5px 5px;
+	margin:50px 5px 5px 5px;
 }
 .bigger{
-	font-size:1.4em;
 	font-weight: bold;
 }
 .nav{
