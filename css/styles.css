@@ -44,7 +44,7 @@ a:hover{
 	position: absolute;
   	top: 50%;
   	left: 15%;
-  	transform: translate(-50%, -50%);
+
   	color: white;
   	text-align: left;
   	border-bottom:solid 2px red;
@@ -54,7 +54,7 @@ a:hover{
 	position: absolute;
   	top: 57%;
   	left: 15%;
-  	transform: translate(-50%, -50%);
+
   	color: white;
   	text-align: left;
 }
@@ -64,7 +64,7 @@ a:hover{
 	position: absolute;
   	top: 96%;
   	left: 48%;
-  	transform: translate(-50%, -50%);
+
   	color: white;
   	text-align: center;
   	border:solid 1px white;
