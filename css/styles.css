@@ -30,7 +30,7 @@ a:hover{
   display:inline;
 }
 
-#red{
+.red{
   color:red;
 }
 .title{
@@ -103,9 +103,14 @@ img{
 }
 .navbar-inverse{
   background-color: rgba(0,0,0,.75);
+  color:white;
 }
 .headline{
   font-size:1.3em;
   color:#2f4f4f;
 }
+
+.navbar-inverse .navbar-nav>li>a {
+  color:white;
+  }
 
